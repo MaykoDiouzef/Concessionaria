@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane fx:id="pnCadastroCliente" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="650.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projeto.concessionaria.ListaClienteViewController">
+   <children>
+      <TabPane prefHeight="550.0" prefWidth="650.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Informações pessoais">
+               <content>
+                  <Pane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <Hyperlink layoutX="6.0" layoutY="6.0" onAction="#voltarIndex" text="Pagina Inicial &gt;" textFill="BLUE" />
+                        <Label fx:id="labelCadastroCliente" layoutX="94.0" layoutY="9.0" text="Buscar de cliente" />
+                        <Label fx:id="lblNome" layoutX="50.0" layoutY="80.0" text="Nome:" />
+                        <TextField fx:id="txtNome" layoutX="50.0" layoutY="98.0" prefHeight="25.0" prefWidth="230.0" />
+                        <Label fx:id="lblCpf" layoutX="50.0" layoutY="138.0" text="CPF:" />
+                        <TextField fx:id="txtCpf" layoutX="50.0" layoutY="156.0" prefHeight="25.0" prefWidth="230.0" />
+                        <Label fx:id="lblEmail" layoutX="370.0" layoutY="80.0" text="E-mail:" />
+                        <TextField fx:id="txtEmail" layoutX="370.0" layoutY="98.0" prefHeight="25.0" prefWidth="230.0" />
+                        <Label fx:id="lblTelefone" layoutX="370.0" layoutY="138.0" text="Telefone:" />
+                        <TextField fx:id="txtTelefone" layoutX="370.0" layoutY="156.0" prefHeight="25.0" prefWidth="230.0" />
+                        <Button layoutX="20.0" layoutY="475.0" mnemonicParsing="false" onAction="#voltarIndex" text="Voltar" />
+                        <Button layoutX="515.0" layoutY="475.0" mnemonicParsing="false" onAction="#btneditarcliente" text="Editar" />
+                        <Button layoutX="580.0" layoutY="475.0" mnemonicParsing="false" onAction="#btnexcluircliente" text="Excluir" />
+                     </children>
+                  </Pane>
+               </content>
+          </Tab>
+          <Tab text="Endereço">
+               <content>
+                  <Pane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <Hyperlink layoutX="6.0" layoutY="6.0" onAction="#voltarIndex" text="Pagina Inicial &gt;" textFill="BLUE" />
+                        <Label fx:id="labelCadastroCliente1" layoutX="94.0" layoutY="9.0" text="Buscar de cliente" />
+                        <Label fx:id="lblLogradouro" layoutX="50.0" layoutY="80.0" text="Lograduoro:" />
+                        <TextField fx:id="txtLogradouro" layoutX="50.0" layoutY="98.0" prefHeight="25.0" prefWidth="230.0" />
+                        <Label fx:id="lblBairro" layoutX="50.0" layoutY="138.0" text="Bairro:" />
+                        <TextField fx:id="txtBairro" layoutX="50.0" layoutY="156.0" prefHeight="25.0" prefWidth="230.0" />
+                        <Label fx:id="lblNumero" layoutX="50.0" layoutY="196.0" text="Número:" />
+                        <TextField fx:id="txtNumero" layoutX="50.0" layoutY="214.0" prefHeight="25.0" prefWidth="230.0" />
+                        <Label fx:id="lblCep" layoutX="370.0" layoutY="80.0" text="CEP:" />
+                        <TextField fx:id="txtCep" layoutX="370.0" layoutY="98.0" prefHeight="25.0" prefWidth="230.0" />
+                        <Label fx:id="lblCidade" layoutX="370.0" layoutY="138.0" text="Cidade:" />
+                        <TextField fx:id="txtCidade" layoutX="370.0" layoutY="156.0" prefHeight="25.0" prefWidth="230.0" />
+                        <Label fx:id="lblEstado" layoutX="370.0" layoutY="196.0" prefHeight="12.0" prefWidth="52.0" text="Estado:" />
+                        <TextField fx:id="txtEstado" layoutX="370.0" layoutY="214.0" prefHeight="25.0" prefWidth="230.0" />
+                        <Label fx:id="lblPais" layoutX="370.0" layoutY="254.0" prefHeight="12.0" prefWidth="52.0" text="País:" />
+                        <TextField fx:id="txtPais" layoutX="370.0" layoutY="272.0" prefHeight="25.0" prefWidth="230.0" />
+                        <Button layoutX="580.0" layoutY="475.0" mnemonicParsing="false" onAction="#btnexcluircliente" text="Excluir" />
+                        <Button layoutX="515.0" layoutY="475.0" mnemonicParsing="false" onAction="#btneditarcliente" text="Editar" />
+                     </children>
+                  </Pane>
+               </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+      <Button layoutX="560.0" layoutY="2.0" mnemonicParsing="false" onAction="#btnpesquisarcliente" text="Pesquisar " />
+      <TextField fx:id="txtPesquisarCliente" layoutX="285.0" layoutY="2.0" prefHeight="25.0" prefWidth="265.0" promptText="Informe o nº de CPF" />
+   </children>
+</Pane>

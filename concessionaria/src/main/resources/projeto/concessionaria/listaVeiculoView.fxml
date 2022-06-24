@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane fx:id="paneCadastroFuncionario" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="650.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projeto.concessionaria.ListaVeiculoViewController">
+    <children>
+        <TabPane prefHeight="550.0" prefWidth="650.0" tabClosingPolicy="UNAVAILABLE">
+            <tabs>
+                <Tab fx:id="janelaDadosPessoaisFuncionario" text="Informações gerais">
+                    <content>
+                        <Pane prefHeight="441.0" prefWidth="650.0">
+                            <children>
+                                <Hyperlink layoutX="6.0" layoutY="6.0" onAction="#voltarIndex" text="Pagina Inicial &gt;" textFill="BLUE" />
+                                <Label fx:id="labelCadastroFuncionarioUm" layoutX="94.0" layoutY="9.0" text="Busca de veículo" />
+                                <Label fx:id="lblCondicaoVeiculo" layoutX="50.0" layoutY="80.0" text="Condição do veículo:" />
+                                <TextField fx:id="txtCondicao" layoutX="50.0" layoutY="99.0" prefHeight="25.0" prefWidth="230.0" />
+                                <Label fx:id="lblValorPedido" layoutX="50.0" layoutY="138.0" text="Valor pedido para venda:" />
+                                <TextField fx:id="txtValorPedido" layoutX="50.0" layoutY="156.0" prefHeight="25.0" prefWidth="230.0" />
+                                <Label fx:id="lblNumeroChassi" layoutX="50.0" layoutY="196.0" text="Número de chassi:" />
+                                <TextField fx:id="txtNumeroChassi" layoutX="50.0" layoutY="214.0" prefHeight="25.0" prefWidth="230.0" />
+                                <Label fx:id="lblPlaca" layoutX="50.0" layoutY="254.0" text="Placa:" />
+                                <TextField fx:id="txtPlaca" layoutX="50.0" layoutY="272.0" prefHeight="25.0" prefWidth="230.0" />
+                                <Label fx:id="lblCorCarro" layoutX="50.0" layoutY="312.0" text="Cor do carro:" />
+                                <TextField fx:id="txtCorCarro" layoutX="50.0" layoutY="330.0" prefHeight="25.0" prefWidth="230.0" />
+                                <Label fx:id="lblDirecao" layoutX="50.0" layoutY="370.0" text="Tipo de direção:" />
+                                <TextField fx:id="txtTipoDirecao" layoutX="50.0" layoutY="388.0" prefHeight="25.0" prefWidth="230.0" />
+                                <Label fx:id="lblAlarme" layoutX="370.0" layoutY="138.0" text="Alarme:" />
+                                <TextField fx:id="txtAlarme" layoutX="370.0" layoutY="156.0" prefHeight="25.0" prefWidth="230.0" />
+                                <Label fx:id="lblVidroDianteiro" layoutX="370.0" layoutY="196.0" text="Vidro elétrico dianteiro:" />
+                                <TextField fx:id="txtVidroDianteiro" layoutX="370.0" layoutY="214.0" prefHeight="25.0" prefWidth="230.0" />
+                                <Label fx:id="lblVidroTraseiro" layoutX="370.0" layoutY="254.0" text="Vidro elétrico traseiro:" />
+                                <TextField fx:id="txtVidroTraseiro" layoutX="370.0" layoutY="272.0" prefHeight="25.0" prefWidth="230.0" />
+                                <Label fx:id="lblQuantidadePortas" layoutX="370.0" layoutY="312.0" text="Quantidade de portas no carro:" />
+                                <TextField fx:id="txtQuantidadePortas" layoutX="370.0" layoutY="330.0" prefHeight="25.0" prefWidth="230.0" />
+                                <Label fx:id="lblQuantidadeCombustivel" layoutX="370.0" layoutY="370.0" text="Quantidade de litros do tanque de combustível:" />
+                                <TextField fx:id="txtQuantidadeCombustivel" layoutX="370.0" layoutY="388.0" prefHeight="25.0" prefWidth="230.0" />
+                                <TextField fx:id="txtSituacao" layoutX="370.0" layoutY="99.0" prefHeight="25.0" prefWidth="230.0" />
+                                <Label fx:id="lblSituacaoVeiculo" layoutX="370.0" layoutY="80.0" text="Situação do veículo:" />
+                          <Button layoutX="20.0" layoutY="475.0" mnemonicParsing="false" onAction="#voltarIndex" text="Voltar" />
+                          <Button layoutX="515.0" layoutY="475.0" mnemonicParsing="false" onAction="#editarVeiculo" text="Editar" />
+                          <Button layoutX="580.0" layoutY="475.0" mnemonicParsing="false" onAction="#excluirVeiculo" text="Excluir" />
+                            </children>
+                        </Pane>
+                    </content>
+                </Tab>
+                <Tab fx:id="janelaAdministrativo" text="Fabricante">
+                    <content>
+                        <Pane prefHeight="438.0" prefWidth="650.0">
+                            <children>
+                                <Hyperlink layoutX="6.0" layoutY="6.0" onAction="#voltarIndex" text="Pagina Inicial &gt;" textFill="BLUE" />
+                                <Label fx:id="labelCadastroFuncionarioDois" layoutX="94.0" layoutY="9.0" text="Busca de veículo" />
+                                <Label fx:id="lblFabricante" layoutX="50.0" layoutY="80.0" text="Fabricante:" />
+                                <TextField fx:id="txtNomeFabricante" layoutX="50.0" layoutY="99.0" prefHeight="25.0" prefWidth="230.0" />
+                                <Label fx:id="lblModelo" layoutX="50.0" layoutY="138.0" text="Modelo:" />
+                                <TextField fx:id="txtNomeCarro" layoutX="50.0" layoutY="156.0" prefHeight="25.0" prefWidth="230.0" />
+                                <Label fx:id="lblVersao" layoutX="50.0" layoutY="196.0" text="Versão:" />
+                                <TextField fx:id="txtVersao" layoutX="50.0" layoutY="214.0" prefHeight="25.0" prefWidth="230.0" />
+                                <Label fx:id="lblAnoFabricacao" layoutX="370.0" layoutY="80.0" text="Ano de fabricação:" />
+                                <TextField fx:id="txtAnoFabricacao" layoutX="370.0" layoutY="99.0" prefHeight="25.0" prefWidth="230.0" />
+                                <Label fx:id="lblAnoModelo" layoutX="370.0" layoutY="138.0" text="Ano do modelo:" />
+                                <TextField fx:id="txtAnoModelo" layoutX="370.0" layoutY="156.0" prefHeight="25.0" prefWidth="230.0" />
+                                <Label fx:id="lblCategoria" layoutX="370.0" layoutY="196.0" text="Categoria:" />
+                                <TextField fx:id="txtCategoria" layoutX="370.0" layoutY="214.0" prefHeight="25.0" prefWidth="230.0" />
+                        <Button layoutX="580.0" layoutY="475.0" mnemonicParsing="false" onAction="#excluirVeiculo" text="Excluir" />
+                        <Button layoutX="515.0" layoutY="475.0" mnemonicParsing="false" onAction="#editarVeiculo" text="Editar" />
+                            </children>
+                        </Pane>
+                    </content>
+                </Tab>
+                <Tab text="Motor">
+                    <content>
+                        <Pane prefHeight="200.0" prefWidth="200.0">
+                            <children>
+                                <Hyperlink layoutX="6.0" layoutY="6.0" onAction="#voltarIndex" text="Pagina Inicial &gt;" textFill="BLUE" />
+                                <Label fx:id="labelCadastroVeiculoTres" layoutX="94.0" layoutY="9.0" text="Busca de veículo" />
+                                <Label fx:id="lblTipoCombustivel" layoutX="50.0" layoutY="80.0" text="Tipo de combustível:" />
+                                <TextField fx:id="txtTipoCombustivel" layoutX="50.0" layoutY="99.0" prefHeight="25.0" prefWidth="230.0" />
+                                <Label fx:id="lblCambio" layoutX="50.0" layoutY="138.0" text="Câmbio:" />
+                                <TextField fx:id="txtCambio" layoutX="50.0" layoutY="156.0" prefHeight="25.0" prefWidth="230.0" />
+                                <Label fx:id="lblCilindros" layoutX="50.0" layoutY="196.0" text="Número de cilindros:" />
+                                <TextField fx:id="txtCilindros" layoutX="50.0" layoutY="214.0" prefWidth="230.0" />
+                                <Label fx:id="lblCilindradas" layoutX="50.0" layoutY="254.0" text="Cilindradas:" />
+                                <TextField fx:id="txtCilindradas" layoutX="50.0" layoutY="272.0" prefWidth="230.0" />
+                                <Label fx:id="lblTorque" layoutX="370.0" layoutY="80.0" text="Torque:" />
+                                <TextField fx:id="txtTorque" layoutX="370.0" layoutY="99.0" prefWidth="230.0" />
+                                <Label fx:id="lblPotencia" layoutX="370.0" layoutY="138.0" text="Potência:" />
+                                <TextField fx:id="txtPotencia" layoutX="370.0" layoutY="156.0" prefWidth="230.0" />
+                                <Label fx:id="lblValvula" layoutX="370.0" layoutY="196.0" text="Válvulas:" />
+                                <TextField fx:id="txtValvula" layoutX="370.0" layoutY="214.0" prefWidth="230.0" />
+                        <Button layoutX="580.0" layoutY="475.0" mnemonicParsing="false" onAction="#excluirVeiculo" text="Excluir" />
+                        <Button layoutX="515.0" layoutY="475.0" mnemonicParsing="false" onAction="#editarVeiculo" text="Editar" />
+                            </children>
+                        </Pane>
+                    </content>
+                </Tab>
+                <Tab text="Rodas">
+                    <content>
+                        <Pane prefHeight="510.0" prefWidth="650.0">
+                            <children>
+                                <Hyperlink layoutX="6.0" layoutY="6.0" onAction="#voltarIndex" text="Pagina Inicial &gt;" textFill="BLUE" />
+                                <Label fx:id="labelCadastroVeiculoQuatro" layoutX="94.0" layoutY="9.0" text="Busca de veículo" />
+                                <Label fx:id="lblAroPneu" layoutX="50.0" layoutY="80.0" text="Aro do pneu:" />
+                                <TextField fx:id="txtAroPneu" layoutX="50.0" layoutY="99.0" prefWidth="230.0" />
+                                <Label fx:id="lblLarguraPneu" layoutX="50.0" layoutY="138.0" text="Largura do pneu:" />
+                                <TextField fx:id="txtLarguraPneu" layoutX="50.0" layoutY="156.0" prefWidth="230.0" />
+                                <Label fx:id="lblMedidaPneu" layoutX="50.0" layoutY="196.0" text="Medidas do pneu:" />
+                                <TextField fx:id="txtMedidaPneu" layoutX="50.0" layoutY="214.0" prefWidth="230.0" />
+                                <Label fx:id="lblFreioABS" layoutX="370.0" layoutY="80.0" text="Freio ABS:" />
+                                <Label fx:id="lblFreioDianteiro" layoutX="370.0" layoutY="138.0" text="Freio dianteiro:" />
+                                <Label fx:id="lblFreioTraseiro" layoutX="370.0" layoutY="196.0" text="Freio traseiro:" />
+                                <TextField fx:id="txtFreioAbs" layoutX="370.0" layoutY="99.0" prefHeight="25.0" prefWidth="230.0" />
+                                <TextField fx:id="txtFreioDianteiro" layoutX="370.0" layoutY="156.0" prefHeight="25.0" prefWidth="230.0" />
+                                <TextField fx:id="txtFreioTraseiro" layoutX="370.0" layoutY="214.0" prefHeight="25.0" prefWidth="230.0" />
+                        <Button layoutX="580.0" layoutY="475.0" mnemonicParsing="false" onAction="#excluirVeiculo" text="Excluir" />
+                        <Button layoutX="515.0" layoutY="475.0" mnemonicParsing="false" onAction="#editarVeiculo" text="Editar" />
+                            </children>
+                        </Pane>
+                    </content>
+                </Tab>
+            </tabs>
+        </TabPane>
+        <Button layoutX="560.0" layoutY="2.0" mnemonicParsing="false" onAction="#btnpesquisarveiculo" text="Pesquisar " />
+        <TextField fx:id="txtPesquisarVeiculo" layoutX="285.0" layoutY="2.0" prefHeight="25.0" prefWidth="265.0" promptText="Informe o nº chassi" />
+    </children>
+</Pane>
