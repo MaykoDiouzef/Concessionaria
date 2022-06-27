@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane fx:id="paneRedefinirSenha" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="650.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projeto.concessionaria.RedefinirSenhaViewController">
+    <children>
+        <Label fx:id="labelNovaSenha" layoutX="232.0" layoutY="141.0" text="Nova senha:" />
+        <PasswordField fx:id="txtNovaSenha" layoutX="312.0" layoutY="137.0" />
+        <Label fx:id="labelNovaSenhaConfirma" layoutX="183.0" layoutY="185.0" text="Confirme nova senha:" />
+        <PasswordField fx:id="txtNovaSenhaConfirma" layoutX="312.0" layoutY="181.0" />
+        <Button layoutX="567.0" layoutY="498.0" mnemonicParsing="false" onAction="#loginConta" prefHeight="25.0" prefWidth="56.0" text="Salvar" />
+        <Button layoutX="26.0" layoutY="498.0" mnemonicParsing="false" onAction="#verificaConta" text="Voltar" />
+        <Hyperlink layoutX="14.0" layoutY="14.0" onAction="#linkLogin" text="Login &gt;" textFill="BLUE" />
+        <Hyperlink layoutX="59.0" layoutY="14.0" onAction="#linkVerificacaoConta" text="Verificação de conta &gt;" textFill="BLUE" />
+        <Label fx:id="labelAlterarSenha" layoutX="185.0" layoutY="17.0" text="Alterar senha" />
+    </children>
+</Pane>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane fx:id="paneVerificaConta" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="650.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projeto.concessionaria.RecuperaContaVerificacaoViewController">
+    <children>
+        <Label fx:id="labelMatricula" layoutX="218.0" layoutY="121.0" text="Matrícula:" />
+        <TextField fx:id="txtMatricula" layoutX="285.0" layoutY="117.0" />
+        <Label fx:id="labelCPF" layoutX="247.0" layoutY="165.0" text="CPF:" />
+        <TextField fx:id="txtCPF" layoutX="285.0" layoutY="161.0" />
+        <Label fx:id="labelEmail" layoutX="234.0" layoutY="209.0" text="E-mail:" />
+        <TextField fx:id="txtEmail" layoutX="285.0" layoutY="205.0" />
+        <Label fx:id="labelPerguntaSegurancaVerifica" layoutX="145.0" layoutY="253.0" text="Pergunta de segurança:" />
+        <ComboBox fx:id="comboBoxPerguntaSegurancaVerifica" layoutX="285.0" layoutY="249.0" prefWidth="150.0" promptText="Escolha pergunta" />
+        <Label fx:id="labelRespostaSegurancaVerifica" layoutX="146.0" layoutY="297.0" text="Resposta de segurança:" />
+        <TextField fx:id="txtRespostaSegurancaVerifica" layoutX="286.0" layoutY="293.0" />
+        <Button layoutX="565.0" layoutY="498.0" mnemonicParsing="false" onAction="#redefinirSenha" text="Avançar" />
+        <Button layoutX="26.0" layoutY="498.0" mnemonicParsing="false" onAction="#voltarLogin" text="Voltar" />
+        <Hyperlink layoutX="14.0" layoutY="14.0" onAction="#linkLogin" text="Login &gt;" textFill="BLUE" />
+        <Label fx:id="labelVerificaConta" layoutX="63.0" layoutY="17.0" text="Verificação de conta" />
+    </children>
+</Pane>

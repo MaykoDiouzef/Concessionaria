@@ -19,9 +19,9 @@ import java.sql.Statement;
 public class ClienteDAO {
 
 //@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-    String url = "jdbc:mysql://localhost:3306/adrianob_2022grupo3";
+    String url = "jdbc:mysql://localhost:3306/concessionaria";
     String user = "root";
-    String password = "!@0147#$";
+    String password = "123456";
 //@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 //##############################################################################
 

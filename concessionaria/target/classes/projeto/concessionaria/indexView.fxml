@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.image.*?>
+
+<Pane fx:id="pnIndex" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="650.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projeto.concessionaria.IndexViewController">
+    <children>
+        <Button layoutX="26.0" layoutY="26.0" mnemonicParsing="false" onAction="#btnvoltarLogin" text="Trocar de conta">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+        <ImageView fx:id="imageLogoIndex" fitHeight="280.0" fitWidth="365.0" layoutX="191.0" layoutY="46.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../image/logologin.png" />
+            </image>
+        </ImageView>
+        <Button layoutX="60.0" layoutY="379.0" mnemonicParsing="false" onAction="#btncadastroveiculo" prefHeight="25.0" prefWidth="130.0" text="Cadastrar veículo">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+        <Button layoutX="60.0" layoutY="423.0" mnemonicParsing="false" onAction="#btnlistaveiculo" prefHeight="25.0" prefWidth="130.0" text="Buscar veículos">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+        <Button layoutX="60.0" layoutY="467.0" mnemonicParsing="false" onAction="#vendaVeiculo" prefHeight="25.0" prefWidth="130.0" text="Vender veículo">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+        <Button layoutX="260.0" layoutY="379.0" mnemonicParsing="false" onAction="#btncadastrocliente" prefHeight="25.0" prefWidth="130.0" text="Cadastrar cliente">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+        <Button layoutX="260.0" layoutY="423.0" mnemonicParsing="false" onAction="#btnlistacliente" prefHeight="25.0" prefWidth="130.0" text="Buscar clientes">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+        <Button layoutX="460.0" layoutY="379.0" mnemonicParsing="false" onAction="#btncadastrofuncionario" prefHeight="25.0" prefWidth="130.0" text="Cadastrar funcionário">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+        <Button layoutX="460.0" layoutY="423.0" mnemonicParsing="false" onAction="#btnlistafuncionario" prefHeight="25.0" prefWidth="130.0" text="Buscar funcionário">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="615.0" layoutY="10.0" onMouseClicked="#telaSobre" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/sobre.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+    </children>
+</Pane>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane fx:id="pnCadastroFuncionario" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="650.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projeto.concessionaria.ListaFuncionarioViewController">
+    <children>
+        <TabPane fx:id="tbpnFuncionario" prefHeight="550.0" prefWidth="650.0" tabClosingPolicy="UNAVAILABLE">
+            <tabs>
+                <Tab fx:id="tbDadosPessoaisFuncionario" text="Dados pessoais do funcionário">
+                    <content>
+                        <Pane fx:id="pnDadosPessoaisFuncionario" prefHeight="200.0" prefWidth="200.0">
+                            <children>
+                                <Label fx:id="lblCadastroFuncionarioUm" layoutX="94.0" layoutY="9.0" text="Buscar de funcionário" />
+                                <Hyperlink layoutX="6.0" layoutY="6.0" onAction="#linkIndex" text="Pagina Inicial &gt;" textFill="BLUE" />
+                                <Label fx:id="lblNome" layoutX="50.0" layoutY="47.0" text="Nome:" />
+                                <TextField fx:id="txtNome" layoutX="50.0" layoutY="65.0" prefHeight="25.0" prefWidth="230.0" />
+                                <Label fx:id="lblCPF" layoutX="50.0" layoutY="104.0" text="CPF:" />
+                                <TextField fx:id="txtCPF" layoutX="50.0" layoutY="122.0" prefHeight="25.0" prefWidth="230.0" />
+                                <Label fx:id="lblDataNascimento" layoutX="50.0" layoutY="162.0" text="Data nascimento:" />
+                                <DatePicker fx:id="dtDataNascimento" layoutX="50.0" layoutY="180.0" />
+                                <Label fx:id="lblSexo" layoutX="50.0" layoutY="220.0" text="Sexo:" />
+                                <ComboBox fx:id="CbSexo" layoutX="50.0" layoutY="238.0" prefWidth="230.0" promptText="Escolha o sexo" />
+                                <Label fx:id="lblEmail" layoutX="50.0" layoutY="278.0" text="Email:" />
+                                <TextField fx:id="txtEmail" layoutX="50.0" layoutY="296.0" prefHeight="25.0" prefWidth="230.0" />
+                                <Label fx:id="lblTelefone" layoutX="50.0" layoutY="336.0" text="Telefone:" />
+                                <TextField fx:id="txtTelefone" layoutX="50.0" layoutY="354.0" prefHeight="25.0" prefWidth="230.0" />
+                                <Label fx:id="lblLogradouro" layoutX="50.0" layoutY="394.0" text="Logradouro:" />
+                                <TextField fx:id="txtLogradouro" layoutX="50.0" layoutY="412.0" prefHeight="25.0" prefWidth="230.0" />
+                                <Label fx:id="lblNumero" layoutX="370.0" layoutY="47.0" text="Número:" />
+                                <TextField fx:id="txtNumero" layoutX="370.0" layoutY="65.0" prefHeight="25.0" prefWidth="230.0" />
+                                <Label fx:id="lblBairro" layoutX="370.0" layoutY="104.0" text="Bairro:" />
+                                <TextField fx:id="txtBairro" layoutX="370.0" layoutY="122.0" prefHeight="25.0" prefWidth="230.0" />
+                                <Label fx:id="lblCEP" layoutX="370.0" layoutY="162.0" text="CEP:" />
+                                <TextField fx:id="txtCEP" layoutX="370.0" layoutY="180.0" prefHeight="25.0" prefWidth="230.0" />
+                                <Label fx:id="lblCidade" layoutX="370.0" layoutY="220.0" text="Cidade:" />
+                                <TextField fx:id="txtCidade" layoutX="370.0" layoutY="238.0" prefHeight="25.0" prefWidth="230.0" />
+                                <Label fx:id="lblEstado" layoutX="370.0" layoutY="278.0" text="Estado:" />
+                                <TextField fx:id="txtEstado" layoutX="370.0" layoutY="296.0" prefHeight="25.0" prefWidth="230.0" />
+                                <Label fx:id="lblPais" layoutX="370.0" layoutY="336.0" text="País:" />
+                                <TextField fx:id="txtPais" layoutX="370.0" layoutY="354.0" prefHeight="25.0" prefWidth="230.0" />
+                                <Button layoutX="20.0" layoutY="475.0" mnemonicParsing="false" onAction="#linkIndex" text="Voltar" />
+                        <Button layoutX="515.0" layoutY="475.0" mnemonicParsing="false" onAction="#editarFuncionario" text="Editar" />
+                        <Button layoutX="580.0" layoutY="475.0" mnemonicParsing="false" onAction="#excluirFuncionario" text="Excluir" />
+                            </children>
+                        </Pane>
+                    </content>
+                </Tab>
+                <Tab fx:id="tbAdministrativo" text="Administrativo">
+                    <content>
+                        <Pane fx:id="pnAdministrativo" prefHeight="438.0" prefWidth="650.0">
+                            <children>
+                                <Label fx:id="lblMatricula" layoutX="50.0" layoutY="47.0" text="Matrícula:" />
+                                <TextField fx:id="txtMatricula" layoutX="50.0" layoutY="65.0" prefHeight="25.0" prefWidth="230.0" />
+                                <Label fx:id="lblSenha" layoutX="50.0" layoutY="104.0" text="Senha:" />
+                                <PasswordField fx:id="psSenha" layoutX="50.0" layoutY="122.0" prefWidth="230.0" />
+                                <Label fx:id="lblPerguntaSeguranca" layoutX="50.0" layoutY="162.0" text="Pergunta de segurança:" />
+                                <TextField fx:id="txtPerguntaSeguranca" layoutX="50.0" layoutY="180.0" prefHeight="25.0" prefWidth="230.0" />
+                                <Label fx:id="lblRespostaSeguranca" layoutX="50.0" layoutY="220.0" text="Resposta de segurança:" />
+                                <TextField fx:id="txtRespostaSeguranca" layoutX="50.0" layoutY="238.0" prefHeight="25.0" prefWidth="230.0" />
+                                <Label fx:id="lblStatus" layoutX="370.0" layoutY="47.0" text="Status:" />
+                                <ComboBox fx:id="cbStatus" layoutX="370.0" layoutY="65.0" prefWidth="230.0" promptText="Status atual" />
+                                <Label fx:id="lblCargo" layoutX="370.0" layoutY="104.0" text="Cargo:" />
+                                <ComboBox fx:id="cbCargo" layoutX="370.0" layoutY="122.0" prefWidth="230.0" promptText="Cargo atual" />
+                                <Label fx:id="lblDataContratacao" layoutX="370.0" layoutY="162.0" text="Data de contratação:" />
+                                <DatePicker fx:id="dtDataContratacao" layoutX="370.0" layoutY="180.0" />
+                                <Label fx:id="lblSalario" layoutX="370.0" layoutY="220.0" text="Salário:" />
+                                <TextField fx:id="txtSalario" layoutX="370.0" layoutY="238.0" prefHeight="25.0" prefWidth="230.0" />
+                                <Label fx:id="lblCadastroFuncionarioDois" layoutX="94.0" layoutY="9.0" text="Buscar de funcionário" />
+                                <Hyperlink layoutX="6.0" layoutY="6.0" onAction="#linkIndex" text="Pagina Inicial &gt;" textFill="BLUE" />
+                        <Button layoutX="580.0" layoutY="475.0" mnemonicParsing="false" onAction="#excluirFuncionario" text="Excluir" />
+                        <Button layoutX="515.0" layoutY="475.0" mnemonicParsing="false" onAction="#editarFuncionario" text="Editar" />
+                            </children>
+                        </Pane>
+                    </content>
+                </Tab>
+            </tabs>
+        </TabPane>
+      <TextField fx:id="txtPesquisarVeiculo" layoutX="285.0" layoutY="2.0" prefHeight="25.0" prefWidth="265.0" promptText="Informe o nº matrícula" />
+      <Button layoutX="560.0" layoutY="2.0" mnemonicParsing="false" onAction="#btnpesquisarFuncionario" text="Pesquisar " />
+    </children>
+</Pane>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.image.*?>
+
+<Pane fx:id="paneTelaLogin" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="650.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projeto.concessionaria.LoginViewController">
+    <children>
+        <ImageView fx:id="imageLogoLogin" fitHeight="200.0" fitWidth="300.0" layoutX="229.0" layoutY="32.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../image/logologin.png" />
+            </image>
+        </ImageView>
+        <Label fx:id="labelMatricula" layoutX="217.0" layoutY="259.0" text="Matrícula:" textAlignment="RIGHT" />
+        <TextField fx:id="txtMatricula" layoutX="285.0" layoutY="255.0" />
+        <Label fx:id="labelSenha" layoutX="234.0" layoutY="303.0" text="Senha:" textAlignment="RIGHT" />
+        <PasswordField fx:id="txtSenha" layoutX="285.0" layoutY="299.0" />
+        <Button layoutX="286.0" layoutY="343.0" mnemonicParsing="false" onAction="#entrarIndex" prefHeight="25.0" prefWidth="80.0" text="Entrar" textAlignment="CENTER" />
+        <Hyperlink layoutX="25.0" layoutY="502.0" onAction="#esqueciSenha" text="Esqueci minha senha" />
+    </children>
+</Pane>

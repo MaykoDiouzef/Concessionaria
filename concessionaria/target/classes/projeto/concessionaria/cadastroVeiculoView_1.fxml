@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane fx:id="paneCadastroFuncionario" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="650.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <TabPane prefHeight="550.0" prefWidth="650.0" tabClosingPolicy="UNAVAILABLE">
+            <tabs>
+                <Tab fx:id="janelaDadosPessoaisFuncionario" text="Informações gerais">
+                    <content>
+                        <Pane prefHeight="200.0" prefWidth="200.0">
+                            <children>
+                                <Hyperlink layoutX="6.0" layoutY="6.0" onAction="#linkIndexum" text="Pagina Inicial &gt;" textFill="BLUE" />
+                                <Label fx:id="labelCadastroFuncionarioUm" layoutX="94.0" layoutY="9.0" text="Cadastro de veículo" />
+                                <Label fx:id="lblCondicaoVeiculo" layoutX="50.0" layoutY="76.0" text="Condição do veículo:" />
+                                <ComboBox fx:id="cbCondicaoVeiculo" layoutX="50.0" layoutY="95.0" prefWidth="200.0" promptText="Escolha a condição" />
+                                <Label fx:id="lblValorPedido" layoutX="50.0" layoutY="134.0" text="Valor pedido para venda:" />
+                                <TextField fx:id="txtValorPedido" layoutX="50.0" layoutY="152.0" prefHeight="25.0" prefWidth="230.0" />
+                                <Label fx:id="lblNumeroChassi" layoutX="50.0" layoutY="192.0" text="Número de chassi:" />
+                                <TextField fx:id="txtNumeroChassi" layoutX="50.0" layoutY="210.0" prefHeight="25.0" prefWidth="230.0" />
+                                <Label fx:id="lblPlaca" layoutX="50.0" layoutY="250.0" text="Placa:" />
+                                <TextField fx:id="txtPlaca" layoutX="50.0" layoutY="268.0" prefHeight="25.0" prefWidth="230.0" />
+                                <Label fx:id="lblCorCarro" layoutX="50.0" layoutY="308.0" text="Cor do carro:" />
+                                <TextField fx:id="txtCorCarro" layoutX="50.0" layoutY="326.0" prefHeight="25.0" prefWidth="230.0" />
+                                <Label fx:id="lblDirecao" layoutX="50.0" layoutY="366.0" text="Tipo de direção:" />
+                                <ComboBox fx:id="cbDirecao" layoutX="50.0" layoutY="384.0" prefWidth="200.0" promptText="Escolha a direção" />
+                                <Label fx:id="lblAlarme" layoutX="370.0" layoutY="76.0" text="Alarme:" />
+                                <ComboBox fx:id="cbAlarme" layoutX="370.0" layoutY="95.0" prefWidth="200.0" promptText="Escolha sim ou não" />
+                                <Label fx:id="lblVidroDianteiro" layoutX="370.0" layoutY="134.0" text="Vidro eletrico dianteiro:" />
+                                <ComboBox fx:id="cbVidroDianteiro" layoutX="370.0" layoutY="152.0" prefWidth="200.0" promptText="Escolha sim ou não" />
+                                <Label fx:id="lblVidroTraseiro" layoutX="370.0" layoutY="192.0" text="Vidro eletrico traseiro:" />
+                                <ComboBox fx:id="cbVidroTraseiro" layoutX="370.0" layoutY="210.0" prefWidth="200.0" promptText="Escolha sim ou não" />
+                                <Label fx:id="lblQuantidadePortas" layoutX="370.0" layoutY="250.0" text="Quantidade de portas no carro:" />
+                                <TextField fx:id="txtQuantidadePortas" layoutX="370.0" layoutY="268.0" prefHeight="25.0" prefWidth="230.0" />
+                                <Label fx:id="lblQuantidadeCombustivel" layoutX="370.0" layoutY="308.0" text="Quantidade de litros do tanque de combustível:" />
+                                <TextField fx:id="txtQuantidadeCombustivel" layoutX="370.0" layoutY="326.0" prefHeight="25.0" prefWidth="230.0" />
+                                <Button layoutX="20.0" layoutY="476.0" mnemonicParsing="false" onAction="#voltarIndex" text="Voltar" />
+                            </children>
+                        </Pane>
+                    </content>
+                </Tab>
+                <Tab fx:id="janelaAdministrativo" text="Fabricante">
+                    <content>
+                        <Pane prefHeight="438.0" prefWidth="650.0">
+                            <children>
+                                <Hyperlink layoutX="6.0" layoutY="6.0" onAction="#linkIndexdois" text="Pagina Inicial &gt;" textFill="BLUE" />
+                                <Label fx:id="labelCadastroFuncionarioDois" layoutX="94.0" layoutY="9.0" text="Cadastro de veículo" />
+                                <Label fx:id="lblFabricante" layoutX="50.0" layoutY="76.0" text="Fabricante:" />
+                                <TextField fx:id="txtFabricante" layoutX="50.0" layoutY="95.0" prefHeight="25.0" prefWidth="230.0" />
+                                <Label fx:id="lblModelo" layoutX="50.0" layoutY="134.0" text="Modelo:" />
+                                <TextField fx:id="txtModelo" layoutX="50.0" layoutY="152.0" prefHeight="25.0" prefWidth="230.0" />
+                                <Label fx:id="lblVersao" layoutX="50.0" layoutY="192.0" text="Versão:" />
+                                <TextField fx:id="txtVersao" layoutX="50.0" layoutY="210.0" prefHeight="25.0" prefWidth="230.0" />
+                                <Label fx:id="lblAnoFabricacao" layoutX="370.0" layoutY="76.0" text="Ano de fabricação:" />
+                                <TextField fx:id="txtAnoFabricacao" layoutX="370.0" layoutY="95.0" prefHeight="25.0" prefWidth="230.0" />
+                                <Label fx:id="lblAnoModelo" layoutX="370.0" layoutY="134.0" text="Ano do modelo:" />
+                                <TextField fx:id="txtAnoModelo" layoutX="370.0" layoutY="152.0" prefHeight="25.0" prefWidth="230.0" />
+                                <Label fx:id="lblCategoria" layoutX="370.0" layoutY="192.0" text="Categoria:" />
+                                <ComboBox fx:id="cbCategoria" layoutX="370.0" layoutY="210.0" prefWidth="200.0" promptText="Escolha a categoria" />
+                            </children>
+                        </Pane>
+                    </content>
+                </Tab>
+                <Tab text="Motor">
+                    <content>
+                        <Pane prefHeight="200.0" prefWidth="200.0">
+                            <children>
+                                <Hyperlink layoutX="6.0" layoutY="6.0" onAction="#linkIndextres" text="Pagina Inicial &gt;" textFill="BLUE" />
+                                <Label fx:id="labelCadastroVeiculoTres" layoutX="94.0" layoutY="9.0" text="Cadastro de veículo" />
+                                <Label fx:id="lblTipoCombustivel" layoutX="50.0" layoutY="76.0" text="Tipo de combustível:" />
+                                <ComboBox fx:id="cbTipoCombustivel" layoutX="50.0" layoutY="95.0" prefWidth="200.0" promptText="Escolha o combustível" />
+                                <Label fx:id="lblCambio" layoutX="50.0" layoutY="134.0" text="Câmbio:" />
+                                <ComboBox fx:id="cbCambio" layoutX="50.0" layoutY="152.0" prefWidth="200.0" promptText="Escolha o câmbio" />
+                                <Label fx:id="lblCilindros" layoutX="50.0" layoutY="192.0" text="Número de cilindros:" />
+                                <TextField fx:id="txtClindros" layoutX="50.0" layoutY="210.0" prefWidth="230.0" />
+                                <Label fx:id="lblCilindradas" layoutX="50.0" layoutY="250.0" text="Cilindradas:" />
+                                <TextField fx:id="txtCilindradas" layoutX="50.0" layoutY="268.0" prefWidth="230.0" />
+                                <Label fx:id="lblTorque" layoutX="370.0" layoutY="76.0" text="Torque:" />
+                                <TextField fx:id="txtTorque" layoutX="370.0" layoutY="95.0" prefWidth="230.0" />
+                                <Label fx:id="lblPotencia" layoutX="370.0" layoutY="134.0" text="Potência:" />
+                                <TextField fx:id="txtPotencia" layoutX="370.0" layoutY="152.0" prefWidth="230.0" />
+                                <Label fx:id="lblValvula" layoutX="370.0" layoutY="192.0" text="Válvula:" />
+                                <TextField fx:id="txtValvula" layoutX="370.0" layoutY="210.0" prefWidth="230.0" />
+                            </children>
+                        </Pane>
+                    </content>
+                </Tab>
+                <Tab text="Rodas">
+                    <content>
+                        <Pane prefHeight="510.0" prefWidth="650.0">
+                            <children>
+                                <Hyperlink layoutX="6.0" layoutY="6.0" onAction="#linkIndexquatro" text="Pagina Inicial &gt;" textFill="BLUE" />
+                                <Label fx:id="labelCadastroVeiculoQuatro" layoutX="94.0" layoutY="9.0" text="Cadastro de veículo" />
+                                <Label fx:id="lblAroPneu" layoutX="50.0" layoutY="76.0" text="Aro do pneu:" />
+                                <TextField fx:id="txtAroPneu" layoutX="50.0" layoutY="95.0" prefWidth="230.0" />
+                                <Label fx:id="lblLarguraPneu" layoutX="50.0" layoutY="134.0" text="Largura do pneu:" />
+                                <TextField fx:id="txtLarguraPneu" layoutX="50.0" layoutY="152.0" prefWidth="230.0" />
+                                <Label fx:id="lblMedidaPneu" layoutX="50.0" layoutY="192.0" text="Medidas do pneu:" />
+                                <TextField fx:id="txtMedidaPneu" layoutX="50.0" layoutY="210.0" prefWidth="230.0" />
+                                <Label fx:id="lblFreioABS" layoutX="370.0" layoutY="76.0" text="Freio ABS:" />
+                                <ComboBox fx:id="cbFreioABS" layoutX="370.0" layoutY="95.0" prefWidth="200.0" promptText="Escolha sim ou não" />
+                                <Label fx:id="lblFreioDianteiro" layoutX="370.0" layoutY="134.0" text="Freio dianteiro:" />
+                                <ComboBox fx:id="cbFreioDianteiro" layoutX="370.0" layoutY="152.0" prefWidth="200.0" promptText="Escolha o tipo de freio" />
+                                <Label fx:id="lblFreioTraseiro" layoutX="370.0" layoutY="192.0" text="Freio traseiro:" />
+                                <ComboBox fx:id="cbFreioTraseiro" layoutX="370.0" layoutY="210.0" prefWidth="200.0" promptText="Escolha o tipo de freio" />
+                                <Button layoutX="583.0" layoutY="476.0" mnemonicParsing="false" onAction="#cadastrarVeiculo" text="Salvar" />
+                            </children>
+                        </Pane>
+                    </content>
+                </Tab>
+            </tabs>
+        </TabPane>
+    </children>
+</Pane>

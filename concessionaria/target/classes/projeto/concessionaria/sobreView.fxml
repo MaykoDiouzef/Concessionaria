@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="650.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projeto.concessionaria.SobreViewController">
+   <children>
+      <Hyperlink layoutX="14.0" layoutY="14.0" onAction="#voltarIndex" text="Página Inicial &gt;" textFill="BLUE" />
+      <Label fx:id="labelCadastroCliente" layoutX="103.0" layoutY="17.0" text="Sobre a equipe" />
+      <Button layoutX="20.0" layoutY="505.0" mnemonicParsing="false" onAction="#voltarIndex" text="Voltar" />
+      <ImageView fitHeight="125.0" fitWidth="125.0" layoutX="60.0" layoutY="50.0" onMouseClicked="#Usuario1" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/icone.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <Label layoutX="104.0" layoutY="180.0" text="Usuário" />
+      <ImageView fitHeight="125.0" fitWidth="125.0" layoutX="250.0" layoutY="50.0" onMouseClicked="#Usuario2" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/icone.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <Label layoutX="294.0" layoutY="180.0" text="Usuário" textAlignment="CENTER" />
+      <ImageView fitHeight="125.0" fitWidth="125.0" layoutX="440.0" layoutY="50.0" onMouseClicked="#Usuario3" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/icone.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <Label layoutX="483.0" layoutY="180.0" text="Usuário" />
+      <ImageView fitHeight="125.0" fitWidth="125.0" layoutX="155.0" layoutY="200.0" onMouseClicked="#Usuario4" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/icone.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <Label layoutX="199.0" layoutY="330.0" text="Usuário" />
+      <ImageView fitHeight="125.0" fitWidth="125.0" layoutX="345.0" layoutY="200.0" onMouseClicked="#Usuario5" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/icone.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <Label layoutX="389.0" layoutY="330.0" text="Usuário" />
+      <ImageView fitHeight="125.0" fitWidth="125.0" layoutX="60.0" layoutY="350.0" onMouseClicked="#Usuario6" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/icone.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <Label layoutX="102.0" layoutY="480.0" text="Usuário" />
+      <ImageView fitHeight="125.0" fitWidth="125.0" layoutX="250.0" layoutY="350.0" onMouseClicked="#Usuario7" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/icone.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <Label layoutX="294.0" layoutY="480.0" text="Usuário" />
+      <ImageView fitHeight="125.0" fitWidth="125.0" layoutX="440.0" layoutY="350.0" onMouseClicked="#Usuario8" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/icone.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <Label layoutX="483.0" layoutY="480.0" text="Usuário" />
+   </children>
+</Pane>
